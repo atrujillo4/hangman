@@ -119,6 +119,7 @@
                 remainingGuesses--;
                 $(".hintbtn").hide();
                 hintshowen = true;
+                updateMan();
             });
             if(hintshowen == true){
                 $("#word").append("<span class='hint'>Hint: " + selectedHint + "</span>");
